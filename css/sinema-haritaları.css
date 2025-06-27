@@ -1,0 +1,206 @@
+body {
+  font-size: 20px;
+  font-weight: 450;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: rgb(43, 42, 42);
+}
+
+input[type="search"] {
+  font-size: 1rem;
+  padding: 0.45rem;
+  text-transform: capitalize;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="search"]:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
+#btnfirst {
+  border: none;
+  background-color: #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#btnfirst:hover {
+  background-color:rgb(43, 42, 42);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+#btnsecond {
+  background-color: #ffffff;
+  color: rgb(43, 42, 42);
+  border-color: #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#btnsecond:hover {
+  background-color: #ffffff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.küçük-soluk {
+  color: rgb(236, 229, 229) !important;
+  font-size: 0.98rem;
+}
+
+h1, h2, h3, h4, h5, h6, span, a, li {
+  color: rgb(243, 243, 243) !important;
+}
+
+#hamburger {
+  font-size: 1.7rem;
+  color: #ffffff !important;
+  transition: transform 0.3s ease;
+
+}
+#hamburger:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D8EFD3;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f6af36 !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+#footer {
+  background-color: rgb(43, 42, 42);
+  color: #e8e8e8;
+}
+
+#footer .nav-link {
+  color: #e8e8e8 !important;
+  font-size: 0.95rem;
+  padding-left: 0;
+  transition: color 0.3s ease;
+}
+
+#footer .nav-link:hover {
+  color: #afada9 !important;
+  transform: scale(1.01);
+}
+
+#footer h4, #footer h5 {
+  color: #fff !important;
+  transition: transform 0.3s ease;
+}
+
+#footer h4:hover,
+#footer h5:hover {
+  transform: scale(1.05);
+}
+
+#footer form input {
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#footer form input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+#footer form .btn-dark {
+  background-color: #000;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#footer form .btn-dark:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border:#000000;
+  transform: scale(1.05);
+}
+
+#footer i {
+  color: white !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#footer i:hover {
+  transform: scale(1.3);
+  color: #000000 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container div div form {
+    margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    margin-top: 0.7rem !important;
+    height: 0.9rem;
+    margin-bottom: 0.8rem !important;
+  }
+
+  form input[type="search"] {
+    font-size: 0.8rem;
+  }
+
+  body {
+    font-size: 0.97rem;
+    font-weight: 450;
+  }
+
+  #hamburger {
+    font-size: 1.4rem !important;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer h6 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #footer ul {
+    justify-content: center !important;
+    padding-top: 0.5rem;
+  }
+
+  #footer i {
+    font-size: 22px;
+    margin-left: 10px;
+    color: white !important;
+  }
+
+  #mesajform {
+    margin-bottom: 2.5rem !important;
+  }
+}

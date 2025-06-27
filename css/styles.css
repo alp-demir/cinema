@@ -1,0 +1,139 @@
+.nav-link {
+  color: black !important;
+}
+#logo{
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    margin-bottom: 10px;
+}
+html{
+    font-size: 20px; 
+    background-color: #F7F7F7 !important;
+    font-weight: 400;
+}
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url("../assets/images/sinemasalonumor.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.99;
+
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+}
+
+#title-text {
+  font-size: clamp(2rem, 6vw, 2.2rem);
+  position: relative;
+  top: -4px;
+
+}
+#header{
+    background-color: #f9c65e;
+}
+#footer{
+    background-color: #f9c65e;
+    color: #000000;
+}
+header ul{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+header ul.nav li.nav-item {
+  margin-right: 0px;
+  margin-right: 0px;
+}
+#hero div div div button {
+    background-color: #f9c65e;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.küçük-soluk {
+  font-size: 0.9em;       
+  color: rgba(0, 0, 0, 0.85); 
+  font-weight: 500;
+}
+li:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.02); 
+}
+
+#hero div div div button:hover {
+    background-color: #e0b54a;
+    color: #1a0a03;
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+footer a.nav-link {
+  transition: color 0.3s ease;
+}
+
+footer a.nav-link:hover {
+  color: #0d6efd; 
+}
+
+footer ul.nav.flex-column li {
+  margin-bottom: 0.5rem;
+}
+
+footer .d-flex.align-items-center ul.list-unstyled.d-flex li a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+footer .d-flex.align-items-center ul.list-unstyled.d-flex li a:hover {
+  color: #0d6efd;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.border{
+  border-color:#000000 !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse .navbar-nav {
+    text-align: right;
+    width: 100%;
+  }
+
+  .navbar-collapse .nav-link {
+    display: block;
+  }
+}
+@media (max-width:770px){
+  #mesajform{
+    margin-left: 2px;
+    margin-top: 15px;
+  }
+}
+@media (max-width:800px){
+  #footerdiv{
+    padding: 15px;
+  }
+}
+
+
