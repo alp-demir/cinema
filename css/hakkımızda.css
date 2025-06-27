@@ -13,7 +13,7 @@ body::before {
   position: fixed;
   inset: 0;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('assets/images/koltuk-kırmızı.jpg');
+              url('../assets/images/koltuk-kırmızı.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
