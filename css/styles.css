@@ -24,7 +24,7 @@ main {
   right: 0;
   bottom: 0;
 
-  background-image: url("../assets/images/sinemasalonumor.jpg");
+  background-image: url("assets/images/sinemasalonumor.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
