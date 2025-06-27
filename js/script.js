@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
  document.getElementById("btn-site").addEventListener("click", function () {
-    window.location.href = "../html/sinema-haritaları.html";
+    window.location.href = "../sinema-haritaları.html";
   });
 
   document.getElementById("btn-youtube").addEventListener("click", function () {
