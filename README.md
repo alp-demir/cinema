@@ -11,10 +11,9 @@ This is a simple cinema website created with HTML, CSS, and JavaScript.
 
 ## Folders
 
-- `/assets/`: Icons, images, and cards  
-- `/css/`: Stylesheets  
-- `/html/`: HTML files  
-- `/js/`: JavaScript files  
+- `assets/`: Icons, images, and cards  
+- `css/`: Stylesheets  
+- `js/`: JavaScript files  
 
 ## Features
 
