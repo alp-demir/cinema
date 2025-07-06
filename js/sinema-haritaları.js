@@ -39,4 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+const observer = new IntersectionObserver((entries, observer) => {
+  let delay = 0;
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add("fade-in-up");
+      }, delay);
+      delay += 150; // Her öğe 150ms gecikmeli gelir
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('#footer h4, #footer h5, #footer .nav-link, #footer form, #footer i, #footer p, #footer h6')
+  .forEach(el => observer.observe(el));
+
 
